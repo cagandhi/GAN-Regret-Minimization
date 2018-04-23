@@ -6,4 +6,9 @@ Training Generative Adversarial Networks (GANs) has been a major research proble
 The regret minimization approach splits into 2 implementations: global regret and local regret. Since, global regret is computationally intractable, so the local regret approach was pursued. The general setting for a game is described as follows: At iteration 't', Learner chooses some action xt, suffers loss f(xt).
 
 In GANs, the loss function is defined by:
-![GAN loss function]()
+![](gan_loss_function.png)
+
+At every iteration, we are presented with a new loss function which is included in the overall regret function to be minimized. What we mean by different loss functions at each iteration is that, since generator and discriminator are neural networks, when the weights in these networks changes, the loss function changes.
+
+We define the architecture for this regret approach as:
+![](architecture.png)
