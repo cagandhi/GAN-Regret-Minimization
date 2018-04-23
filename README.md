@@ -14,12 +14,4 @@ We define the architecture for this regret approach as: <br />
 <img src="architecture.png" width="300" height="250">
 
 We applied the notion of local regret to the generator. Basically, the generator generates images, discriminator distinguishes them as real or fake. Backpropagation is applied on the regret loss function through mini-batch gradient descent. This approach was applied with regret (w=2) and without regret (w=1). <br /> <br />
-
- <div class="row">
-  <div class="column">
-    <img src="Results/gen_loss_win_1.png" alt="gen loss window 1" style="width:200%">
-  </div>
-  <div class="column">
-    <img src="Results/gen_loss_win_2.png" alt="gen loss window 2" style="width:200%">
-  </div>
-</div> 
+<img src="Results/gen_loss_win_1.png" alt="gen loss window 1" width="400" height="300"><img src="Results/gen_loss_win_2.png" alt="gen loss window 2" width="400" height="300">
