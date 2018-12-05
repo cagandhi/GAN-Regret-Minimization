@@ -13,7 +13,7 @@ At every iteration, we are presented with a new loss function which is included 
 #### Architecture for regret approach:
 <img src="images/architecture.png" width="380" height="250">
 
-We applied the notion of local regret to the generator. Basically, the generator generates images, discriminator distinguishes them as real or fake. Backpropagation is applied on the regret loss function through mini-batch gradient descent. This approach was applied to models without regret (w=1) and with regret (w=2). <br /> <br />
+We applied the notion of local regret to the generator. Basically, the generator generates images, discriminator distinguishes them as real or fake. Backpropagation is applied on the regret loss function through mini-batch gradient descent. This approach was applied to models without regret (w=1) and with regret (w=2). <br/>
 #### Generator loss curves (regret vs non-regret):
 <img src="Results/gen_loss_win_1.png" alt="gen loss window 1" width="400" height="300"><img src="Results/gen_loss_win_2.png" alt="gen loss window 2" width="400" height="300">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generator loss: w=1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generator loss: w=2
